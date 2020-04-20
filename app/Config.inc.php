@@ -15,6 +15,10 @@
     define("RUTA_REGISTRO", SERVIDOR . "registro");
     define("RUTA_REGISTRO_CORRECTO", SERVIDOR . "registro-correcto");
     
+    // Estilos CSS y JS de nuestro sitio web
+    define("RUTA_CSS", "css/");
+    define("RUTA_JS", "js/");
+    
     
     
     
