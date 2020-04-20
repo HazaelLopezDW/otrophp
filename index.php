@@ -24,9 +24,11 @@
                 case "registro":
                     $ruta_elegida = "vistas/registro.php";
                     break;
-                case "registro-correcto":
-                    $ruta_elegida = "vistas/registro-correcto.php";
-                    break;
+            }
+        }else if(count($partes_ruta) == 3){
+            if($partes_ruta[1] == "registro-correcto"){
+                $nombre = $partes_ruta[2];
+                $ruta_elegida = "vistas/registro-correcto.php";
             }
         }
     }
