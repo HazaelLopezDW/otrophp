@@ -11,7 +11,7 @@
     echo '$partes_ruta[1] -> ' . $partes_ruta[1] . "<br>";
     echo '$partes_ruta[2] -> ' . $partes_ruta[2] . "<br>";
     
-    $ruta_elegida = "vistas/erro404";
+    $ruta_elegida = "vistas/error404.php";
     
     if($partes_ruta[0] == "otrophp"){
         if(count($partes_ruta) == 1){
