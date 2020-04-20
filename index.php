@@ -7,9 +7,11 @@
     $partes_ruta = array_filter($partes_ruta);
     $partes_ruta = array_slice($partes_ruta, 0);
     
+    /*
     echo '$partes_ruta[0] -> ' . $partes_ruta[0] . "<br>";
     echo '$partes_ruta[1] -> ' . $partes_ruta[1] . "<br>";
     echo '$partes_ruta[2] -> ' . $partes_ruta[2] . "<br>";
+    */
     
     $ruta_elegida = "vistas/error404.php";
     
