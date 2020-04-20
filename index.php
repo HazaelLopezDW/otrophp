@@ -23,8 +23,14 @@
                 case "entradas":
                     $ruta_elegida = "vistas/entradas.php";
                     break;
+                case "login":
+                    $ruta_elegida = "vistas/login.php";
+                    break;
                 case "registro":
                     $ruta_elegida = "vistas/registro.php";
+                    break;
+                case "registro-correcto":
+                    $ruta_elegida = "vistas/registro-correcto.php";
                     break;
             }
         }else if(count($partes_ruta) == 3){
