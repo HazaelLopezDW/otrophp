@@ -11,8 +11,24 @@
     echo '$partes_ruta[1] -> ' . $partes_ruta[1] . "<br>";
     echo '$partes_ruta[2] -> ' . $partes_ruta[2] . "<br>";
     
-    if(count($partes_ruta) == 1){
-        if($partes_ruta[0] == "otrophp"){
-            include_once "vistas/home.php";
+    $ruta_elegida = "vistas/erro404";
+    
+    if($partes_ruta[0] == "otrophp"){
+        if(count($partes_ruta) == 1){
+            $ruta_elegida = "vistas/home.php";
+        }else if(count($partes_ruta) == 2){
+            switch ($partes_ruta[1]){
+                case "entradas":
+                    $ruta_elegida = "vistas/entradas.php";
+                    break;
+                case "registro":
+                    $ruta_elegida = "vistas/registro.php";
+                    break;
+                case "registro-correcto":
+                    $ruta_elegida = "vistas/registro-correcto.php";
+                    break;
+            }
         }
     }
+    
+    include_once $ruta_elegida;
